@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { ExpenseListFilters } from '../../components/ExpenseListFilters';
 import { filters, altFilters } from '../fixtures/filters';
-
+import moment from 'moment';
 
 let wrapper, setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate;
 
@@ -33,3 +33,11 @@ test('should render ExpenseListFilters correctly', () => {
     })
     expect(wrapper).toMatchSnapshot();
 });
+
+test('should sort by amount', () => {
+    const value = 'amount';
+    wrapper.find('select').simulate('change', {
+        target: {value}
+    });
+    expect(sortByAmount).toHaveBeenCalled();
+})
