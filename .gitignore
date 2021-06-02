@@ -4,3 +4,7 @@ node_modules
 dist
 test/components
 examples/lib
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
