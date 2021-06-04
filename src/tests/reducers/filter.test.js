@@ -1,6 +1,6 @@
 import filtersReducer from '../../reducers/filters';
 import moment from 'moment';
-import { start } from 'live-server';
+
 
 test('should setup default filter values', () => {
  const state = filtersReducer(undefined, { type: '@@INIT'})
