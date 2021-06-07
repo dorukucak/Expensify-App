@@ -14,13 +14,16 @@ import './styles/styles.scss';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css'
 
-const store = configureStore();
-store.dispatch(addExpense({ createdAt: 1622925069473, description: 'Water Bill', amount: '4500', }));
+import './firebase/firebase';
+//import './playground/promises.js';
+
+ const store = configureStore();
+/*store.dispatch(addExpense({ createdAt: 1622925069473, description: 'Water Bill', amount: '4500', }));
 store.dispatch(addExpense({ createdAt: 1622925069473, description: 'Gas Bill', amount: '5000'}));
 store.dispatch(addExpense({ description: 'Rent', amount: '3000'}));
 store.dispatch(addExpense({ description: 'Gas Bill' }));
 
-
+ */
 
 /* setTimeout(() => {
  store.dispatch(setTextFilter('rent'));
