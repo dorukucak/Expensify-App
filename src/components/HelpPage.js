@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Switch, Link, NavLink} from 'react-router-dom';
 
 const HelpPage = () => (
  <div>
-  This is from my help page component
+  Contact us at ucakdoruk@gmail.com
  </div>
 );
 
